@@ -22,5 +22,7 @@ namespace SteamWebAPI2.Interfaces
         Task<ISteamWebResponse<ulong>> ResolveVanityUrlAsync(string vanityUrl, int? urlType = null);
 
         Task<SteamCommunityProfileModel> GetCommunityProfileAsync(ulong steamId);
+
+        Task<CheckAppOwnershipModel> CheckAppOwnershipAsync(ulong steamId, uint appId);
     }
 }
